@@ -141,7 +141,8 @@ func (api *UnixfsAPI) getFile(ctx context.Context, p path.Path, size int64) (fil
 		path: p,
 	}
 
-	return f, f.reset()
+	//return f, f.reset()
+	return f, nil
 }
 
 type apiIter struct {
